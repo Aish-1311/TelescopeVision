@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image:url("https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?cs=srgb&dl=pexels-francesco-ungaro-998641.jpg&fm=jpg");
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+p{
+  color: aliceblue;
+  text-align: center;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 17px;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.telescope-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.telescope {
+  width: 311px;
+  height: 311px;
+  background-color: #000;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  border: 7px solid rgba(73, 73, 73, 0.968);
+ 
+}
+
+.image-options {
+  display: flex;
+  align-items:center;
+  padding-left:31%;
+}
+
+.controls {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: left;
+  align-items:center;
+}
+
+.telescope-lens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.telescope-label {
+  margin-top: 1px;
+}
+
+button {
+  padding: 10px 30px;
+  margin: 5px;
+  font-size: 16px;
+  background-color: #007bff;
+  font-style: bold;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
