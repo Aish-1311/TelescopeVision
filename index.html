@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>TelescopeVision</h1>
+  <p>Select the image taken by James Webb Telsecope that you
+    want to observe through a different telescope-lens!</p>
+
+  <div class="image-options">
+    <button onclick="selectImage('/Images/james_webb.jpg')">Carina Nebula</button>
+    <button onclick="selectImage('/Images/webb_2.jpg')">SMACS 0723</button>
+    <button onclick="selectImage('/Images/puzzle.jpg')">Southern Ring Nebula</button>
+  </div>
+
+
+  <div class="container">
+    <div class="telescope-lens">
+      <div class="telescope">
+        <img id="originalTelescopeImage" src="/Images/james_webb.jpg" alt="Original Telescope Image">
+      
+      </div>
+      <p class="telescope-label">James Webb Image</p>
+    </div>
+    <div class="telescope-lens">
+      <div class="telescope">
+        <img id="pressedTelescopeImage" src="/Images/james_webb.jpg" alt="Pressed Telescope Image">
+      </div>
+      <p class="telescope-label">Selected Telescope Image</p>
+    </div>
+
+    <div class="button-container">
+      <button onclick="toggleTelescope('spitzer')">View Spitzer</button>
+      <button onclick="toggleTelescope('wise')">View WISE</button>
+      <button onclick="toggleTelescope('hubble')">View Hubble</button>
+    </div>
+  </div>
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>
